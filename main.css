@@ -10,6 +10,8 @@ body {
 .navbar-brand {
     color: #fff;
     cursor: pointer;
+    text-decoration: underline black;
+    
 }
 .nav-link {
     margin-right: 1em !important;
@@ -17,10 +19,12 @@ body {
 .nav-link:hover {
     color: #000;
 }
-.navbar-collapse { justify-content: flex-end;
+.navbar-collapse { 
+    justify-content: flex-end;
 }
 .header {
-    background-image: url('./bluesky.jpg'); background-size: cover;
+    background-image: url('./bluesky.jpg');
+    background-size: cover;
     background-position: center;
     position: relative;
 }
@@ -42,7 +46,7 @@ body {
     text-align: center;
 }
 .description h1 {
-    color: #6ab446;
+    color: skyblue;
 
 }
 .description p {
@@ -85,8 +89,8 @@ body {
     border-radius: 0;
 }
 .features .btn {
-    background-color: #589b37;
-    border: 1px solid #589b37;
+    background-color: navy;
+    border: 1px solid navy;
     color: #fff;
     margin-top: 20px;
 }
@@ -116,4 +120,80 @@ body {
     font-size: 1.3rem;
     margin-bottom: 0;
     text-transform: uppercase;
+}
+.page-footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 60px 0 30px;
+}
+.footer-copyright {
+    color: #666;
+    padding: 40px 0;
+}
+@media (max-width: 575.98px) {
+    .description {
+        left: 0;
+        padding: 0 15px;
+        position: absolute;
+        top: 10%;
+        transform: none;
+        text-align: center;
+    }
+    .description h1 {
+        font-size: 2em;
+    }
+    .description p {
+        font-size: 1.2rem;
+    }
+    .features {
+        margin: 0;
+    }
+}
+#demo-modal .mnodal-content {
+    border-radius: 0;
+    padding: 2rem;
+}
+#demo-modal .modal-header {
+    border-bottom: none;
+}
+#demo-modal h4 {
+    color: #000;
+    font-size: 30px;
+    margin: 0 0 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+#demo-modal .close {
+    background: #c0c3c8;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 19px;
+    font-weight: normal;
+    height: 30px;
+    opacity: 0.5;
+    padding: 0;
+    position: absolute;
+    right: 26px;
+    text-align: center;
+    top: 26px;
+    width: 30px;
+}
+#demo-modal .close span {
+    position: relative;
+    top: -3px;
+}
+#demo-modal .modal-body p {
+    color: #999;
+}
+#demo-modal .form-control,
+#demo-modal .btn {
+    background-color: #1da098;
+    border: none;
+    color: #fff;
+    min-width: 150px;
+    transition: all 0.4s;
+}
+#demo-modal .btn:hover,
+#demo-modal .btn:focus {
+    background-color: #12968d;;
 }
